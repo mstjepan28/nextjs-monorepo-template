@@ -12,9 +12,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@apps/customer-list-hr@workspace:apps/customer-list-hr":
+"@apps/application_1@workspace:apps/application_1":
   version: 0.0.0-use.local
-  resolution: "@apps/customer-list-hr@workspace:apps/customer-list-hr"
+  resolution: "@apps/application_1@workspace:apps/application_1"
   dependencies:
     "@types/node": 18.16.1
     "@types/react": 18.2.0
@@ -2714,9 +2714,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nextjs-test@workspace:.":
+"nextjs-monorepo@workspace:.":
   version: 0.0.0-use.local
-  resolution: "nextjs-test@workspace:."
+  resolution: "nextjs-monorepo@workspace:."
   dependencies:
     autoprefixer: ^10.4.14
     postcss: ^8.4.23

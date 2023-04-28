@@ -6,8 +6,8 @@
     "apps/*"
   ],
   "scripts": {
-    "dev:app1": "yarn workspace @apps/application_1 dev",
-    "build:app1": "yarn workspace @apps/application_1 build"
+    "app1": "yarn workspace @apps/application_1 dev",
+    "app1:build": "yarn workspace @apps/application_1 build"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
