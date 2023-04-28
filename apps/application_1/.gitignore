@@ -34,8 +34,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Yarn 3 cach files
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
+dist

@@ -1,0 +1,6 @@
+{
+  "name": "@shared/types",
+  "main": "./src",
+  "version": "1",
+  "private": true
+}
