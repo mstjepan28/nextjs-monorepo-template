@@ -58,6 +58,11 @@ The folder should contain:
 
 
 **Package.json**
+
+If other modules are used as dependencies they have to be placed under <u>_peerDependencies_</u> and not <u>_dependencies_</u> or <u>_devDependencies_</u>.
+
+If a module is not defined in the <u>_peerDependencies_</u> then the import of the module will not be recognized.
+
 ```json
 {
   "name": "@shared/module_name",
@@ -72,12 +77,20 @@ The folder should contain:
 
 **./src/index.ts**
 
-Defines the exports of a module:
-
+In this file we define all the parts of the module that should be importable elsewhere.
 ```typescript
 import { FunctionToExport } from "path/to/function/in/module";
 import { ComponentToExport } from "path/to/component/in/module";
 
 export { FunctionToExport, ComponentToExport }
+```
+
+This allows for more simple imports:
+```typescript
+// instead of this
+import { FunctionToExport } from "@shared/module/path/to/function";
+
+// we can do imports like this
+import { FunctionToExport } from "@shared/module";
 ```
 
