@@ -59,18 +59,17 @@ The folder should contain:
 
 **Package.json**
 
-If other modules are used as dependencies they have to be placed under <u>_peerDependencies_</u> and not <u>_dependencies_</u> or <u>_devDependencies_</u>.
+If other modules are used as dependencies they have to be placed under <u>_peerDependencies_</u>, <u>_dependencies_</u> or <u>_devDependencies_</u> with their version set to <u>_"workspace:^"_</u>.
 
-If a module is not defined in the <u>_peerDependencies_</u> then the import of the module will not be recognized.
+If a module is not defined in the here then the import of the module will not be recognized.
 
 ```json
 {
   "name": "@shared/module_name",
   "private": true,
   "main": "./src",
-  "peerDependencies": {
-    // other modules used in this one
-    "@shared/module_name_1": "*"
+  "dependencies": {
+    "@shared/module_name_1": "workspace:^"
   }
 }
 ```

@@ -3,7 +3,7 @@
   "private": true,
   "version": "1",
   "main": "./src",
-  "peerDependencies": {
-    "@shared/types": "*"
+  "dependencies": {
+    "@shared/types": "workspace:^"
   }
 }

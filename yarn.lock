@@ -16,6 +16,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@apps/application_1@workspace:apps/application_1"
   dependencies:
+    "@shared/types": "workspace:^"
+    "@shared/ui": "workspace:^"
     "@types/node": 18.16.1
     "@types/react": 18.2.0
     "@types/react-dom": 18.2.1
@@ -25,9 +27,6 @@ __metadata:
     react: 18.2.0
     react-dom: 18.2.0
     typescript: 5.0.4
-  peerDependencies:
-    "@shared/types": "*"
-    "@shared/ui": "*"
   languageName: unknown
   linkType: soft
 
@@ -310,17 +309,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@shared/types@workspace:shared/types":
+"@shared/types@workspace:^, @shared/types@workspace:shared/types":
   version: 0.0.0-use.local
   resolution: "@shared/types@workspace:shared/types"
   languageName: unknown
   linkType: soft
 
-"@shared/ui@workspace:shared/ui":
+"@shared/ui@workspace:^, @shared/ui@workspace:shared/ui":
   version: 0.0.0-use.local
   resolution: "@shared/ui@workspace:shared/ui"
-  peerDependencies:
-    "@shared/types": "*"
+  dependencies:
+    "@shared/types": "workspace:^"
   languageName: unknown
   linkType: soft
 
