@@ -6,8 +6,10 @@
     "apps/*"
   ],
   "scripts": {
-    "app1": "yarn workspace @apps/application_1 dev",
-    "app1:build": "yarn workspace @apps/application_1 build"
+    "next": "yarn workspace @apps/nextjs-app dev",
+    "next:build": "yarn workspace @apps/nextjs-app build",
+    "vite": "yarn workspace @apps/vite-react-app dev",
+    "vite:build": "yarn workspace @apps/vite-react-app build"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
